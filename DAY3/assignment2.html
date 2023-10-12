@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        #cn{
+            align-items: center;
+        }
+        img{
+            height: 20px;
+            width: 50px;
+        }
+        #button{
+            border:2px solid orange;
+            background-color: orange;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">CREDIT CARD DETAILS</h1>
+    <form>
+        <fieldset>
+            <legend>CARD DETAILS</legend>
+            <label>CARD NUMBER:</label>
+            <input type="text" id="cn" name="cn" placeholder="Enter your card number">
+            
+            <br></br>
+            <input type="radio" id="r1" name="r1" value="visa">CreditCard (visa/mastercard) <img src="visa.jpg">
+            <input type="radio" id="r2" name="r1" value="rupay">DebitCard(rupay) <img src="rupay.jpg">
+    <br></br>
+            EXPIRATION DATE:
+            <select id="s1" name="s1"> Month
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                
+            </select> /
+            
+            <select id="s2" name="s2">Year
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+        </select>
+
+
+            <br></br>
+            <label for="pwd">CVV: </label>
+            <input  id="pwd"  name="pwd" type= "password"  maxlength="3"  required />
+            
+            <br></br>
+            <label for="name">CARD NAME</label>
+            <input type="text" id="nm" name="nm" placeholder="Enter the name on the card">
+            
+            <br></br>
+            <input type="sumbit" id="button" value="Complete Transaction">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
