@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Amount Calculator</title>
+    <style>
+        body {
+              background-image: url('BACK.JPG');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+    </style>
+</head>
+<body>
+    <h1>Total Amount Calculator</h1>
+    <hr>
+    <br>
+    <label for="product name">Product name: </label>
+    <input type="text" id="text"  placeholder="Enter unit product name">
+    <br><br>
+
+    <label for="unitPrice">Unit Price: </label>
+    <input type="number" id="unitPrice"  placeholder="Enter unit price">
+    
+    <br><br>
+
+    <label for="quantity">Quantity: &#x20B9 </label>
+    <input type="number" id="quantity" placeholder="Enter quantity">
+    
+    <br><br>
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+    
+    <p>Total Amount: &#x20B9 <span id="totalAmount">0.00</span></p>
+    
+    <script>
+        function calculateTotal() {
+            const unitPrice = parseFloat(document.getElementById("unitPrice").value);
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const totalAmount = unitPrice * quantity;
+            
+            document.getElementById("totalAmount").textContent = totalAmount.toFixed(2);
+        }
+    </script>
+</body>
+</html>
