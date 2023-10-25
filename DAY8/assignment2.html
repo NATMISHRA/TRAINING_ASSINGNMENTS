@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Professional Movie Reviews - Stay updated with the latest movie reviews, ratings, and recommendations from our expert critics.">
+
+  <meta name="keywords" content="professional movie reviews, film reviews, movie ratings, expert critics, cinema, movie recommendations">
+
+  <meta name="author" content="NATASHA">
+
+  <meta name="og:title" content="Professional Movie Reviews - Expert Film Critiques">
+
+  <meta name="og:description" content="Stay updated with the latest movie reviews, ratings, and recommendations from our expert critics.">
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    <title>
+
+        FLIM REVIEW
+
+    </title>
+
+   
+
+   
+
+    <style>
+
+ 
+
+        body{
+
+            text-align: center;
+
+        }
+
+        header{
+
+            background-color:rgb(128, 62, 103);
+
+            color: #e7e018;
+
+            height: 200px;
+
+            text-align: center;
+
+           
+
+           
+
+        }
+
+        .button {
+
+            border: 2px solid rgb(254, 250, 250);;
+
+           
+
+            padding: 16px 32px;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            display: inline-block;
+
+            font-size: 16px;
+
+            margin: 4px 2px;
+
+            transition-duration: 0.4s;
+
+            cursor: pointer;
+
+        }
+
+       
+
+        .button1 {
+
+          background-color: #d8d69a;
+
+          color:#2572a1;
+
+          
+
+        }
+
+ 
+
+        .button1:hover {
+
+         color: #d8d69a;
+         background-color: #2572a1;
+
+
+         
+
+        }
+
+         
+
+         
+
+        .content{
+
+            background-color:rgb(128, 62, 103);
+;
+
+            color: #e7e018;
+
+           
+
+        }
+
+        h1{
+
+            font-size: 45px;
+
+            text-shadow: 0 0 8px #f9f9f8, 0 0 5px #f7f6f5;
+
+        }
+
+        h2{
+
+            font-size: 30px;
+
+        }
+
+       
+
+       
+
+        p{
+
+            text-align: justify;
+
+            word-spacing: 8px;
+
+            font-size: 20px;
+
+            border: 2px solid #fffdfd;
+
+            padding: 2%;;
+
+        }
+
+ 
+
+        mark{
+
+            background: #f8f6f6;
+
+        }
+
+ 
+
+       
+
+body {
+
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+ 
+
+section {
+
+  margin: 0 auto;
+
+  max-width: 1300px;
+
+  padding: 0 10px;
+
+}
+
+ 
+
+ul {
+
+  display: grid;
+
+  list-style: none;
+
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+
+  gap: 20px;
+
+  font-weight: bolder;
+
+  padding: 0;
+
+ 
+
+}
+
+ 
+
+.image_wrapper {
+
+  position: relative;
+
+}
+
+ 
+
+img {
+
+  display: block;
+
+  object-fit: cover;
+
+  width: 100%;
+
+  height: auto;
+
+}
+
+ 
+
+.overlay {
+
+  position: absolute;
+
+  background: #060606;
+
+  bottom: 20px;
+
+  right: 20px;
+
+ 
+
+  color: white;
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+ 
+
+}
+
+ 
+
+.overlay_3 {
+
+  left: 0;
+
+  bottom: 0;
+
+  height: 30%;
+
+  width: 100%;
+
+ 
+
+  transform: scale(0);
+
+  transition: all .3s ease-in-out;
+
+  backdrop-filter: blur(8px) brightness(80%);
+
+}
+
+ 
+
+.image_wrapper:hover .overlay_3 {
+
+  transform: scale(1);
+
+}
+
+ 
+
+.overlay h2 {
+
+  color: #fff;
+
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  margin: 0;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+      /* Float four columns side by side */
+
+      .column {
+
+      float: left;
+
+      width: 23%;
+
+  padding: 0 10px;
+
+}
+
+ 
+
+/* Remove extra left and right margins, due to padding */
+
+.row {margin: 0 -5px;}
+
+ 
+
+/* Clear floats after the columns */
+
+.row:after {
+
+  content: "";
+
+  display: table;
+
+  clear: both;
+
+}
+
+ 
+
+/* Responsive columns */
+
+
+ 
+
+/* Style the counter cards */
+
+.card {
+
+  
+
+  padding: 16px;
+
+  text-align: center;
+
+  background-color:rgb(128, 62, 103);
+
+}
+
+ 
+
+.card img{
+
+  width: 150px;
+
+  height: 150px;
+
+  margin-left: 35px;
+
+}
+
+.card h3 {
+
+  color: #d2a035;
+
+}
+
+   
+
+       
+
+        footer {
+
+            background-color:rgb(128, 62, 103);
+            
+
+            color: #d2a035;
+
+            text-align: center;
+
+            padding: 20px 0;
+
+         
+
+        }
+
+         .social-media-links {
+
+            margin-top: 10px;
+
+        }
+
+       
+
+        .social-media-links a {
+
+            display: inline-block;
+
+            margin: 0 10px;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 20px;
+
+        }
+
+   
+        @media screen and (max-width: 400px) {
+
+header {
+
+  column-count: 2;
+}
+
+
+}
+
+ 
+
+ 
+
+ 
+
+</style>
+
+ 
+
+ 
+
+ 
+
+</head>
+
+<body>
+
+    <header>
+
+      <hr>
+
+     <h1> SHOW ON!!!! </h1>
+
+     <br><br>
+
+     <button class="button button1">HOME</button></a>  
+
+     <button class="button button1">NEWS</button></a>
+
+     <button class="button button1">PHOTOS</button>
+
+     <button class="button button1">MUSIC</button>
+
+     <button class="button button1">VIEDOS</button>
+
+     <button class="button button1">BOX OFFICE</button>
+
+     <button class="button button1">ABOUT US</button>
+
+    </header>
+
+   
+
+    <div class="content">
+
+      <br>
+
+      <h1>FLIM REVIEW</h1>
+
+      <br>
+
+      <p>What Is a Movie Review?
+        A movie review is an evaluation of a particular film that includes a summary of the movie and any relevant analysis and opinion. Filmgoers commonly use movie reviews to determine whether they should watch a specific release or better inform their personal opinion after an initial viewing. A movie review can be a complete, in-depth analysis or a simple blurb sharing a personal perspective about the film’s events. You can write, record, or film a movie review for blogs, news publications, entertainment podcasts, radio broadcasts, television, or streaming platforms.</p>
+
+       
+
+       
+
+        <br><br><br>
+
+        <section>
+
+            <ul>
+
+               
+
+               
+
+                <li class="image_wrapper">
+
+                  <img src="images/phat.jpg" alt="" />
+
+                  <div class="overlay overlay_3">
+
+                    <h2 >PATHAAN</h2>
+
+                    <h5 >15 | 49 min | Crime, Drama, Thriller</h5>
+
+                 
+
+                   
+
+                   </div>
+
+                </li>
+
+   
+
+                <li class="image_wrapper">
+
+                    <img src="images/JAWAN.jpg" alt=""/>
+
+                    <div class="overlay overlay_3">
+
+                      <h2>JAWAN</h2>
+
+                      <h5> 18 | 57 min | Action, Adventure, Drama</h5>  
+
+                    </div>
+
+                  </li>
+
+   
+
+                  <li class="image_wrapper">
+
+                    <img src="images/kkhh.jpg" alt="" />
+
+                    <div class="overlay overlay_3">
+
+                      <h2 >KUCH KUCH HOTA HAI</h2>
+
+                      <h5 >12 | 22 min | Comedy, Drama, Romance</h5>
+
+                   
+
+                     
+
+                     </div>
+
+                  </li>
+
+     
+
+                  <li class="image_wrapper">
+
+                      <img src="images/khan1.jpg" alt=""/>
+
+                      <div class="overlay overlay_3">
+
+                        <h2>MY NAME IS KHAN</h2>
+
+                        <h5> 15 | 22 min | Comedy, Romance</h5>  
+
+                      </div>
+
+                    </li>
+
+                 
+
+                    <li class="image_wrapper">
+
+                      <img src="images/dilwale.jpg" alt="" />
+
+                      <div class="overlay overlay_3">
+
+                        <h2 >DILWALE</h2>
+
+                        <h5 >15 | 363 min | Crime, Drama, Mystery</h5>
+
+                     
+
+                       
+
+                       </div>
+
+                    </li>
+
+       
+
+                    <li class="image_wrapper">
+
+                        <img src="images/DEAR.jpg" alt=""/>
+
+                        <div class="overlay overlay_3">
+
+                          <h2>DEAR ZINDAGI</h2>
+
+                          <h5>15 | 88 min | Crime, Drama, Mystery </h5>  
+
+                        </div>
+
+                      </li>
+
+   
+
+                      <li class="image_wrapper">
+
+                        <img src="images/CE.jpg" alt="" />
+
+                        <div class="overlay overlay_3">
+
+                          <h2 >CHENNAI EXPRESS</h2>
+
+                          <h5 >15 | 60 min | Crime, Drama, Mystery</h5>
+
+                       
+
+                         
+
+                         </div>
+
+                      </li>
+
+         
+
+                      <li class="image_wrapper">
+
+                          <img src="images/CHAK.jpg" alt=""/>
+
+                          <div class="overlay overlay_3">
+
+                            <h2> CHAK DE INDIA</h2>
+
+                            <h5>15 | 70 min | Action, Crime, Drama </h5>  
+
+                          </div>
+
+                        </li>
+              </ul>
+
+ 
+
+             <HR>
+                <h1> SRK FLIM REVIEWS</h1>
+            <HR>
+ 
+
+           
+
+          <div class="row">
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="images/movie.jpg">
+
+                <h3>FLIM REVIEWS</h3>
+
+                <p3 style="color: #d2a035;">Reviews of the latest Theatrical Releases.</p3>
+
+               
+
+              </div>
+
+            </div>
+
+         
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="images/movie.jpg">
+
+                <h3>FLIM TRAILER</h3>
+
+                <p3 style="color: #d2a035;">Trailers for the most exciting upcoming movies.</p3>
+
+              </div>
+
+            </div>
+
+           
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="images/movie.jpg">
+
+                <h3>SHORT FLIM REVIES </h3>
+
+                <p3 style="color: #d2a035;">Reviews for the best short movies around.</p3>
+
+              </div>
+
+            </div>
+
+           
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="images/movie.jpg">
+
+                <h3>FLIM PODCAST</h3>
+
+                <p3 style="color: #d2a035;">Find out about some of the best UK film festivals.</p3>
+
+              </div>
+
+            </div>
+
+          </div>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+        </section>
+
+       
+
+     <footer>
+
+        <hr>
+
+        <h4>SHOW ON!!!!</h4>
+
+        <p1>&copy; 1990-2023 by SHOW ON.com</p1>
+
+        <div class="social-media-links">
+
+            <a href="https://www.facebook.com"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/640px-Facebook_icon_2013.svg.png" style="width: 30px;height: 30px;"></a>
+
+            <a href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" style="width: 30px;height: 30px;"></a>
+
+            <a href="https://www.instagram.com"><img src="https://static-00.iconduck.com/assets.00/social-instagram-icon-1024x1024-qshv5qmi.png" style="width: 30px;height: 30px;"></i></a>
+
+            <a href="https://www.linkedin.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSr3_ijsHy7asI734QY6ixc9B-W_i28--VPQ&usqp=CAU" style="width: 30px;height: 30px;"></i></a>
+
+        </div>
+
+     </footer>
+
+ 
+
+       
+
+ 
+
+     </div>
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+   
+
+     
+
+       
+
+ 
+
+       
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ </body>

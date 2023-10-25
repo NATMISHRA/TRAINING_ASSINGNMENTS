@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Data</title>
+    <style>
+        
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        #div1{
+            display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .imga{
+        margin-left: 500px;
+    }
+    
+
+    </style></head>
+<body>
+<div class="main">
+    <div itemscope>
+        <p> 
+            <img itemprop="photo"
+                    src="download.jpg" class="imga" >
+            <br> 
+            </p>
+            <a itemprop="url" href="https://en.wikipedia.org/wiki/Hogwarts" >
+                <h1 itemprop="name" style="text-align: center;">Hogwarts</h1>
+            </a>
+            <div id="div1">
+            <div itemscope></div>
+            <p>
+                <img itemprop="photo"
+                    src="G.jpg">
+                <span itemprop="name" 
+                style="color:rgb(228, 40, 15)"><br> 
+                <b><span style="text-align: center;">Gryfindor</span></b>
+            </span> 
+            </p>
+            <p>
+                <img itemprop="photo"
+                src="R.jpg">
+                <span itemprop="name" 
+                style="color:rgb(9, 30, 190)"><br>
+                <b style="text-align: center;">Ravenclaw</b>
+            </span> 
+            </p>
+            <br><br>
+            <p>
+                <img itemprop="photo"
+                src="Hufflepuff.jpg">
+                <span itemprop="name" 
+                style="color:rgb(240, 213, 11)"> <br>
+                <b><span>Hufflepuff</span></b>
+            </span> 
+            </p>
+            <p> 
+                <img itemprop="photo"
+                src="S.jpg">
+                <span itemprop="name" 
+                style="color:rgb(3, 43, 9)"> <br> 
+                <b>Slytherin</b>
+            </span> 
+            </p>
+        </div>
+
+        </div>
+    
+        
+    </div>
+</div>
+</body>
+</html>
