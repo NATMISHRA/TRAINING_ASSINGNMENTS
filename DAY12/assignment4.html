@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h4>Arthmitic Operations</h4>
+     initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="" id="event">
+        <fliedset>
+            <legend></legend>
+                First Number:<input type="number" id="n1"><br>
+                <br>
+                Second Number:<input type="number" id="n2"><br>
+                <br>
+                <button type="button" onclick="fn_operation(event)" value="add">SUM</button>
+                <button type="button" onclick="fn_operation(event)" value="sub">SUB</button>
+                <button type="button" onclick="fn_operation(event)" value="mul">MUL</button>
+                <button type="button" onclick="fn_operation(event)" value="div">DIV</button>
+                <p id="result"></p>
+
+            
+        </fliedset>
+    </form>
+    <script>
+    function fn_operation(event) {
+        var f_num=document.getElementById("n1");
+         var s_num=document.getElementById("n2");
+         var res = document.getElementById("result");
+       
+            if(event.target.value=='add'){
+                res.innerHTML="result :"+ (parseFloat(f_num.value) + parseFloat(s_num.value));
+            }
+          else if(event.target.value=='sub'){
+
+                
+                res.innerHTML="result :" +  (parseFloat(f_num.value) - parseFloat(s_num.value));
+          }
+           else if(event.target.value=='mul') {
+            res.innerHTML= "result :"+ (parseFloat(f_num.value) * parseFloat(s_num.value));
+
+        }
+        else if(event.target.value=='div'){
+            res.innerHTML= "result :"+ (parseFloat(f_num.value) / parseFloat(s_num.value)).toFixed(2);
+
+        }
+    }
+    </script>
+</body>
+</html>

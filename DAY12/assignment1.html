@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn_login(){
+
+            var txtObj=document.getElementById("t1");
+            var pwdObj=document.getElementById("pwd");
+            var message=document.getElementById("error");
+
+            if(txtObj.value != "admin" && pwdObj.value != "admin123"){
+                    message.innerText="UserName or Password Invalid!";
+                    message.style.color="red";
+                }
+                else{
+                    message.innerText="Welcome to Login!";
+                    message.style.color="green";
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    <h2>Login form using Java Script</h2>
+    <form>
+        <fieldset>
+            <legend>LOGIN</legend>
+            User Login:<input type="text" id="t1" autofocus required><br><br>
+            Password:<input type="password" id="pwd">
+            <button type="button" id=" loginbutton" onclick="fn_login()">Login</button>
+            <p id="error"></p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
