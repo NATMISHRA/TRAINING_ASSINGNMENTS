@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image timer</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;"> ADS ON INTERVAL</h2>
+    <img id="img1" height="100%" width="50%">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        var img_arr = ["img.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+        $(document).ready(function () {
+            setInterval(function () {
+                var x = Math.floor((Math.random() * img_arr.length));
+
+                $("#img1").attr("src", img_arr[x]);
+            }, 2000);
+        });
+           
+         console.log(x);
+        
+
+
+    </script>
+</body>
+
+</html>
