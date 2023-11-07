@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button"  id="txt1" value="Get Output" onclick="even()">
+      
+    <p id="res"></p> <br>
+    <input type="number" id="n1" >
+    <input type="number" id="n2" >
+    <input type="button"  id="txt1" value="Get Output" onclick="fn_power()">
+
+    <div id="div1" ></div><br>
+
+    
+    <input type="text" id="txt1" name="txt1" placeholder="Enter a string">
+    <br><br>
+    <button onclick="fn_string()">Count of words</button>
+    <br><br>
+    <span id="cw"></span>
+ </div>
+</div>
+
+
+    <script>
+        function even()
+        {
+             var arr=[20,13,26,45,89,70];
+             var txtObj=document.getElementById("txt1");
+             var resObj=document.getElementById("res");
+              str=" ";
+             for(let i in arr){
+                var n = parseInt(arr[i]);
+               if(n%2==0){
+                str= str + "Even No =" + n + "<br>" ;
+                console.log(arr[i]);
+               }
+             }
+             
+             resObj.innerHTML= str;
+        
+
+        }
+
+        function fn_power()
+        {
+
+            var txt1=document.getElementById("n1");
+            var txt2=document.getElementById("n2");
+            var divObj=document.getElementById("div1");
+            str="";
+        
+            let power=Math.pow(txt1.value,txt2.value);
+            divObj.innerHTML= str + "Power =" + power;
+
+        }
+
+        function fn_string()
+       {
+        var str = document.getElementById('txt1').value;
+            var count = document.getElementById('cw');
+            if(str == ""){
+                count.innerHTML = 0;
+            }
+            else
+            {
+                var counter = 1;
+               for(let i = 0; i < str.length; i++){
+                if(str.charAt(i) == " "){
+                    counter++;
+                    continue;
+                }
+                count.innerHTML = counter;
+                
+            }
+            
+           
+           
+            }
+        }
+       
+        
+
+    </script>
+</body>
+</html>

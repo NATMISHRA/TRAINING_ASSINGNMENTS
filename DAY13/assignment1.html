@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>JS Arrays-----List</h4>
+    <hr>
+    <input type="button" value="Get Data" onclick="fn_GetData()">
+
+    <table id="table1" border="2" width="300">
+
+
+    </table>
+
+    <script>
+        function fn_GetData()
+         {
+            var arr=['HTML5','CSS3','jQuery','AngularJS','Bootstrap'];
+            var tabObj=document.getElementById("table1");
+              str=""; 
+
+            for(let i in arr)
+            {
+                let n= parseInt(i) + 1;
+                str= str +"<tr><td>" + n + "</td><td>" + arr[i] + "</td> </tr>" ;
+               
+            }
+            tabObj.innerHTML= str; 
+         }
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table{
+        margin-left:400px;
+    }
+    #get{
+        margin-left: 350px;
+    }
+</style>
+
+    
+</head>
+<body>
+    <h4> Array Of Objects</h4>
+    <input type="button" value="Get_Data" onclick="fn_get()" id="get">
+    <br>
+    
+    <table id="table1" width="500" border="5" cellpadding="10" cellspacing="0" style="text-align: center;">
+        <tr>
+            <td>NAME</td>
+            <td>CITY</td>
+            <td>COUNTRY</td>
+        </tr>
+
+    </table>
+
+    <script>
+        var arr = [ 
+        {Name:"Alfreds Futterkiste",City:"Berlin",Country:"Germany"}, 
+        {Name:"Ana Trujillo Emparedados y helados",City:"México D.F.",Country:"Mexico"}, 
+        {Name:"Antonio Moreno Taquería",City:"México D.F.",Country:"Mexico"}, 
+        {Name:"Around the Horn",City:"London",Country:"UK"}, 
+        {Name:"B's Beverages",City:"London",Country:"UK"}, 
+        {Name:"Berglunds snabbköp",City:"Luleå",Country:"Sweden"}, 
+        {Name:"Blauer See Delikatessen",City:"Mannheim",Country:"Germany"}, 
+        {Name:"Blondel père et fils",City:"Strasbourg",Country:"France"}, 
+        {Name:"Bólido Comidas preparadas",City:"Madrid",Country:"Spain"},
+         {Name:"Bon app'",City:"Marseille",Country:"France"}, 
+          {Name:"Bottom-Dollar Marketse",City:"Tsawassen",Country:"Canada"},
+          {Name:"Cactus Comidas para llevar",City:"Buenos Aires",Country:"Argentina"},
+           {Name:"Centro comercial Moctezuma",City:"México D.F.",Country:"Mexico"}, 
+           {Name:"Chop-suey Chinese",City:"Bern",Country:"Switzerland"}, 
+        {Name:"Comércio Mineiro",City:"São Paulo",Country:"Brazil"} 
+
+        ]
+
+        function fn_get(){
+            var str  = "";
+
+				for(let item of arr)
+				{
+					str= str + "<tr><td>" + (item.Name) + "</td><td>" + (item.City) + "</td><td>" + (item.Country) + "</td></tr>";
+				}
+						 
+				var  tableObj =  document.getElementById("table1");	 	
+				tableObj.innerHTML += str;
+			  }		  
+        
+
+    </script>
+</body>
+</html>
