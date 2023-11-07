@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+    <h2 style="text-align: center">Promise</h2>
+
+    <h1>Display Random Number</h1>
+    <button onclick="DisplayNumber()">Get Number</button>
+    <p id="number"></p>
+</body>
+<script>
+    
+    function generateNumber()
+     {
+        return new Promise((resolve,reject)=>
+         {
+            var randomNumber = Math.floor(Math.random() * 50) + 1;
+            // resolve(randomNumber);
+           
+            if (randomNumber % 5 === 0) {
+                resolve(randomNumber);
+            } else {
+                reject("error ="+randomNumber);
+            };
+        });
+    }
+    function DisplayNumber() {
+        generateNumber()
+            .then(number =>
+            {
+                document.getElementById("number").innerHTML = `Random number is: ${number}`;
+             }) .catch(error =>
+                { document.getElementById('number').innerHTML = `Not a multiple is: ${error}`;
+ 
+            });
+    }
+</script>
+    
+</body>
+</html>

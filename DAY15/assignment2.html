@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body>
+    <h2 style="text-align: center;"> MAPS CONCEPT</h2>
+    <form>
+        <fieldset>
+            <legend>Friend's Details</legend>
+     Name:
+    <input type="text" id="txt1" >
+    <br> <br>
+    Contact No:
+    <input type="text" id="txt2">
+    <br> <br>
+    <input type="button" id="txt3" value="Add Friend" onclick="fn_button()">
+    <br> <br>
+    <input type="button" id=" txt4" value="Get Contact" onclick="fn_button1()">
+
+
+</fieldset>
+</form>
+     <script>
+       var txtObj1=document.getElementById("txt1");
+        var txtObj2=document.getElementById("txt2");
+    /* txtObj3=document.getElementById("txt3").value;
+        txtObj4=document.getElementById("txt4").value;*/
+        var mapObj = new Map();
+
+        function fn_button(){
+             mapObj.set(txt1.value, txt2.value);
+            alert("Friend name was added");
+            
+        }
+
+        function fn_button1()
+        {
+            
+           txtObj2.value = mapObj.get(txt1.value);
+
+        }
+
+
+     </script>
+    
+</body>
+</html>
