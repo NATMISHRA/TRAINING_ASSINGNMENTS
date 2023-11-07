@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="txt1" name="empname" placeholder="enter empolyee name" >
+    
+    <input type="number" id="txt2" name="empid"placeholder="enter empolyee ID">
+    
+    <input type="number" id="txt3" name="empsal" placeholder="enter salary">
+    
+    <input type="text" id="txt4" name="empjob" placeholder="enter job specification">
+    <br><br>
+    <input type="button" value="Show_Table" onclick="fn_output()" id="txt5" >
+
+<table id="table1" border="2px double black" width="100%">
+     <tr>
+        <th>Ename</th>
+        <th>EID</th>
+        <th>SAL</th>
+        <th>Job</th>
+</tr> 
+
+</table>
+</body>
+<script>
+    function fn_output()
+    {
+    
+        var txtObj1=document.getElementById("txt1").value;
+        var txtObj2=document.getElementById("txt2").value;
+        var txtObj3=document.getElementById("txt3").value;
+        var txtObj4=document.getElementById("txt4").value;
+
+        var tableObj= document.getElementById("table1");
+        var row = tableObj.insertRow(-1);
+ 
+        var cell1=row.insertCell(-1);
+        var cell2=row.insertCell(-1);
+        var cell3=row.insertCell(-1);
+        var cell4=row.insertCell(-1);
+     cell1.innerHTML=txtObj1;
+     cell2.innerHTML=txtObj2;
+     cell3.innerHTML=txtObj3;
+     cell4.innerHTML=txtObj4;
+
+    }
+
+    
+</script>
+
+
+</html>
