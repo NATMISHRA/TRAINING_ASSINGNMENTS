@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style : italic;
+        }
+        .underline
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Applying Style Classes Using jQuery</h2>
+    <hr>
+    <input type="button" value="B" onclick="" id="bt1">
+    <input type="button" value="I" onclick="" id="bt2">
+    <input type="button" value="U" onclick="" id="bt3">
+
+    <p id="p1">
+        Fever dream high in the quiet of the night
+You know that I caught it
+Bad, bad boy
+Shiny toy with a price
+You know that I bought it
+Killing me slow, out the window
+I'm always waiting for you to be waiting below
+Devils roll the dice, angels roll their eyes
+What doesn't kill me makes me want you more
+    </p>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $("#bt1").click(function()
+        {
+            
+            $("#p1").toggleClass("bold") ;
+        
+        });
+        $("#bt2").click(function()
+        {
+            
+            $("#p1").toggleClass("italic");
+        
+        });
+        $("#bt3").click(function()
+        {
+            
+            $("#p1").toggleClass("underline");
+        
+        });
+    </script>
+
+</body>
+</html>
